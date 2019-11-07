@@ -1,0 +1,3 @@
+mysite/
+*.sqlite3
+manage.py
