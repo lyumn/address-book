@@ -37,7 +37,9 @@ LOGIN_REDIRECT_URL = '/'
 
 Migrate in database tables:
 
-`python manage.py migrate todo`
+`python manage.py migrate address_book`
+
+`python manage.py migrate accounts`
 
 Add to your project urls.py:
 
