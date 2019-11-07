@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 class Contact(models.Model):
     first_name = models.CharField(max_length=200)
@@ -7,4 +8,6 @@ class Contact(models.Model):
     email = models.CharField(max_length=200)
     street_address = models.CharField(max_length=200)
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE)
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
